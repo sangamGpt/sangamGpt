@@ -1,0 +1,277 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Text To Word</title></head><body><p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang="hi"&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="UTF-8"&gt;</p>
+<p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p>&lt;title&gt;Premium E-commerce&lt;/title&gt;</p>
+<p>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p>&lt;style&gt;</p>
+<p>body {</p>
+<p>margin: 0;</p>
+<p>font-family: 'Roboto', sans-serif;</p>
+<p>background: #111;</p>
+<p>color: white;</p>
+<p>}</p>
+<p>body::before {</p>
+<p>content: '';</p>
+<p>position: fixed;</p>
+<p>top: -50%;</p>
+<p>left: -50%;</p>
+<p>width: 200%;</p>
+<p>height: 200%;</p>
+<p>background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);</p>
+<p>background-size: 400% 400%;</p>
+<p>animation: rgb 15s ease infinite;</p>
+<p>z-index: -1;</p>
+<p>filter: blur(100px);</p>
+<p>}</p>
+<p>@keyframes rgb {</p>
+<p>0% { background-position: 0% 50%; }</p>
+<p>50% { background-position: 100% 50%; }</p>
+<p>100% { background-position: 0% 50%; }</p>
+<p>}</p>
+<p>/* Login Box */</p>
+<p>#login-container {</p>
+<p>position: absolute;</p>
+<p>top: 50%; left: 50%;</p>
+<p>transform: translate(-50%, -50%);</p>
+<p>background: rgba(0,0,0,0.85);</p>
+<p>padding: 40px;</p>
+<p>border-radius: 20px;</p>
+<p>text-align: center;</p>
+<p>width: 350px;</p>
+<p>}</p>
+<p>#login-container h1 {</p>
+<p>margin-bottom: 30px;</p>
+<p>animation: glow 1.5s infinite alternate;</p>
+<p>}</p>
+<p>@keyframes glow {</p>
+<p>from { text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff; }</p>
+<p>to { text-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; }</p>
+<p>}</p>
+<p>#login-container input {</p>
+<p>width: 100%;</p>
+<p>padding: 12px;</p>
+<p>margin: 10px 0;</p>
+<p>border-radius: 10px;</p>
+<p>border: none;</p>
+<p>outline: none;</p>
+<p>background: rgba(255,255,255,0.1);</p>
+<p>color: #fff;</p>
+<p>}</p>
+<p>#login-container button {</p>
+<p>width: 100%;</p>
+<p>padding: 14px;</p>
+<p>margin-top: 15px;</p>
+<p>border: none;</p>
+<p>border-radius: 10px;</p>
+<p>font-size: 16px;</p>
+<p>cursor: pointer;</p>
+<p>color: #fff;</p>
+<p>background: linear-gradient(45deg,#ff0055,#00ffff,#ffdd00);</p>
+<p>background-size: 200% 200%;</p>
+<p>animation: btnAnim 3s linear infinite;</p>
+<p>transition: transform 0.3s;</p>
+<p>}</p>
+<p>#login-container button:hover {</p>
+<p>transform: scale(1.05);</p>
+<p>}</p>
+<p>@keyframes btnAnim {</p>
+<p>0% { background-position: 0% 50%; }</p>
+<p>50% { background-position: 100% 50%; }</p>
+<p>100% { background-position: 0% 50%; }</p>
+<p>}</p>
+<p>/* Header */</p>
+<p>header {</p>
+<p>padding: 15px 40px;</p>
+<p>background: linear-gradient(90deg,#ff4b2b,#ff416c);</p>
+<p>display: flex;</p>
+<p>justify-content: space-between;</p>
+<p>align-items: center;</p>
+<p>box-shadow: 0 4px 10px rgba(0,0,0,0.5);</p>
+<p>}</p>
+<p>header h1 {</p>
+<p>font-family: 'Playfair Display', serif;</p>
+<p>font-size: 1.8rem;</p>
+<p>margin: 0;</p>
+<p>}</p>
+<p>nav a {</p>
+<p>color: white;</p>
+<p>text-decoration: none;</p>
+<p>margin-left: 25px;</p>
+<p>font-weight: 500;</p>
+<p>transition: 0.3s;</p>
+<p>}</p>
+<p>nav a:hover { color: #00f0ff; }</p>
+<p>/* Products Grid */</p>
+<p>.products {</p>
+<p>display: grid;</p>
+<p>grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));</p>
+<p>gap: 25px;</p>
+<p>padding: 40px;</p>
+<p>}</p>
+<p>.product-card {</p>
+<p>background: #1a1a1a;</p>
+<p>border-radius: 15px;</p>
+<p>overflow: hidden;</p>
+<p>text-align: center;</p>
+<p>box-shadow: 0 0 20px rgba(0,255,255,0.2);</p>
+<p>transition: transform 0.3s, box-shadow 0.3s;</p>
+<p>}</p>
+<p>.product-card:hover {</p>
+<p>transform: translateY(-8px);</p>
+<p>box-shadow: 0 0 40px rgba(0,255,255,0.6);</p>
+<p>}</p>
+<p>.product-card img { width: 100%; border-bottom: 1px solid #333; }</p>
+<p>.product-card h2 { margin: 15px 0 5px; font-family: 'Playfair Display', serif; }</p>
+<p>.product-card p { margin: 0 0 15px; color: #ccc; }</p>
+<p>/* Buttons */</p>
+<p>.buy-btn, .admin-btn {</p>
+<p>display: inline-block;</p>
+<p>margin: 10px 5px 15px;</p>
+<p>padding: 10px 18px;</p>
+<p>border: none;</p>
+<p>border-radius: 50px;</p>
+<p>cursor: pointer;</p>
+<p>font-weight: bold;</p>
+<p>transition: 0.3s;</p>
+<p>}</p>
+<p>.buy-btn {</p>
+<p>background: linear-gradient(45deg,#ff416c,#ff4b2b);</p>
+<p>color: white;</p>
+<p>}</p>
+<p>.buy-btn:hover { box-shadow: 0 0 20px #ff4b2b; }</p>
+<p>.admin-btn {</p>
+<p>background: #00ffff;</p>
+<p>color: #111;</p>
+<p>}</p>
+<p>.admin-btn:hover { box-shadow: 0 0 20px #00ffff; }</p>
+<p>/* Admin Panel */</p>
+<p>#adminPanel {</p>
+<p>margin: 20px;</p>
+<p>padding: 20px;</p>
+<p>background: rgba(255,255,255,0.05);</p>
+<p>border-radius: 15px;</p>
+<p>}</p>
+<p>#adminPanel input {</p>
+<p>width: 30%;</p>
+<p>padding: 8px;</p>
+<p>margin: 8px;</p>
+<p>border: none;</p>
+<p>border-radius: 8px;</p>
+<p>outline: none;</p>
+<p>}</p>
+<p>@media(max-width:600px){</p>
+<p>#login-container { width: 90%; padding: 25px; }</p>
+<p>#adminPanel input { width: 90%; display: block; margin: 10px auto; }</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;!-- Login --&gt;</p>
+<p>&lt;div id="login-container"&gt;</p>
+<p>&lt;h1&gt;Login&lt;/h1&gt;</p>
+<p>&lt;input type="text" placeholder="Name" id="username"&gt;</p>
+<p>&lt;input type="email" placeholder="Gmail" id="useremail"&gt;</p>
+<p>&lt;input type="password" placeholder="Password" id="userpass"&gt;</p>
+<p>&lt;button onclick="login()"&gt;Login&lt;/button&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;!-- Products Section --&gt;</p>
+<p>&lt;section id="products-section" style="display:none;"&gt;</p>
+<p>&lt;header&gt;</p>
+<p>&lt;h1&gt;Premium Shop&lt;/h1&gt;</p>
+<p>&lt;nav&gt;</p>
+<p>&lt;a href="#"&gt;Home&lt;/a&gt;</p>
+<p>&lt;a href="#"&gt;Products&lt;/a&gt;</p>
+<p>&lt;a href="#"&gt;Contact&lt;/a&gt;</p>
+<p>&lt;a href="#"&gt;Account&lt;/a&gt;</p>
+<p>&lt;/nav&gt;</p>
+<p>&lt;/header&gt;</p>
+<p>&lt;div class="products" id="productsList"&gt;&lt;/div&gt;</p>
+<p>&lt;!-- Admin Panel --&gt;</p>
+<p>&lt;div id="adminPanel" style="display:none;"&gt;</p>
+<p>&lt;h2&gt;Admin Panel&lt;/h2&gt;</p>
+<p>&lt;input type="text" id="prodName" placeholder="Product Name"&gt;</p>
+<p>&lt;input type="number" id="prodPrice" placeholder="Product Price"&gt;</p>
+<p>&lt;input type="text" id="prodImg" placeholder="Image URL"&gt;</p>
+<p>&lt;button class="admin-btn" onclick="addProduct()"&gt;Add Product&lt;/button&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/section&gt;</p>
+<p>&lt;script&gt;</p>
+<p>// Products</p>
+<p>let products = [</p>
+<p>{name:"Product 1", price:1500, img:"https://via.placeholder.com/300x200.png?text=Product+1"},</p>
+<p>{name:"Product 2", price:2500, img:"https://via.placeholder.com/300x200.png?text=Product+2"},</p>
+<p>];</p>
+<p>// Admin credentials</p>
+<p>const adminCred = {</p>
+<p>username:"zero",</p>
+<p>email:"ffzero8434@gmail.com",</p>
+<p>password:"ffsangam813205"</p>
+<p>};</p>
+<p>let isAdmin = false;</p>
+<p>// Login</p>
+<p>function login(){</p>
+<p>const name = document.getElementById("username").value.trim();</p>
+<p>const email = document.getElementById("useremail").value.trim();</p>
+<p>const pass = document.getElementById("userpass").value.trim();</p>
+<p>if(!name || !email || !pass){</p>
+<p>alert("सभी फ़ील्ड भरें");</p>
+<p>return;</p>
+<p>}</p>
+<p>if(name === adminCred.username &amp;&amp; email === adminCred.email &amp;&amp; pass === adminCred.password){</p>
+<p>isAdmin = true;</p>
+<p>document.getElementById("adminPanel").style.display = "block"; // Admin gets panel</p>
+<p>} else {</p>
+<p>isAdmin = false;</p>
+<p>document.getElementById("adminPanel").style.display = "none"; // User only view</p>
+<p>}</p>
+<p>document.getElementById("login-container").style.display = "none";</p>
+<p>document.getElementById("products-section").style.display = "block";</p>
+<p>renderProducts();</p>
+<p>}</p>
+<p>// Render products</p>
+<p>function renderProducts(){</p>
+<p>const container = document.getElementById("productsList");</p>
+<p>container.innerHTML = "";</p>
+<p>products.forEach((prod,index)=&gt;{</p>
+<p>const div = document.createElement("div");</p>
+<p>div.className = "product-card";</p>
+<p>let adminBtn = isAdmin</p>
+<p>? `&lt;button class="admin-btn" onclick="deleteProduct(${index})"&gt;Delete&lt;/button&gt;`</p>
+<p>: '';</p>
+<p>div.innerHTML = `</p>
+<p>&lt;img src="${prod.img}" alt="${prod.name}"&gt;</p>
+<p>&lt;h2&gt;${prod.name}&lt;/h2&gt;</p>
+<p>&lt;p&gt;₹${prod.price}&lt;/p&gt;</p>
+<p>&lt;button class="buy-btn"&gt;Buy&lt;/button&gt;</p>
+<p>${adminBtn}</p>
+<p>`;</p>
+<p>container.appendChild(div);</p>
+<p>});</p>
+<p>}</p>
+<p>// Add product (admin only)</p>
+<p>function addProduct(){</p>
+<p>if(!isAdmin) return;</p>
+<p>const name = document.getElementById("prodName").value.trim();</p>
+<p>const price = document.getElementById("prodPrice").value.trim();</p>
+<p>const img = document.getElementById("prodImg").value.trim();</p>
+<p>if(name &amp;&amp; price &amp;&amp; img){</p>
+<p>products.push({name, price, img});</p>
+<p>renderProducts();</p>
+<p>document.getElementById("prodName").value = "";</p>
+<p>document.getElementById("prodPrice").value = "";</p>
+<p>document.getElementById("prodImg").value = "";</p>
+<p>} else {</p>
+<p>alert("Fill all fields");</p>
+<p>}</p>
+<p>}</p>
+<p>// Delete product (admin only)</p>
+<p>function deleteProduct(index){</p>
+<p>if(!isAdmin) return;</p>
+<p>products.splice(index,1);</p>
+<p>renderProducts();</p>
+<p>}</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p></body></html>
